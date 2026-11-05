@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Reenie+Beanie&display=swap');
+
+body {
+    background-color: #0b0b0b;
+    color: #e5e5e5;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.text-custom-bronze { color: #89715b; }
+.bg-custom-bronze { background-color: #89715b; }
+.border-custom-bronze { border-color: #89715b; }
+.border-bronze-subtle { border-color: rgba(137, 113, 91, 0.3); }
+
+/* Initial hidden state */
+.stagger-card, .scroll-anim {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Typing cursor blink effect */
+.typing-cursor {
+    display: inline-block;
+    background-color: #89715b;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+.skill-bar {
+    transition: width 1.5s cubic-bezier(0.1, 0.42, 0.65, 1);
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+@keyframes scrollText {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+.animate-scroll {
+    display: flex;
+    width: 200%;
+    animation: scrollText 18s linear infinite;
+}
+
+@keyframes shineEffect {
+    0% { opacity: 0.25; text-shadow: 0 0 10px rgba(243, 227, 195, 0.1); }
+    50% { opacity: 0.6; text-shadow: 0 0 20px rgba(243, 227, 195, 0.4), 0 0 30px rgba(197, 168, 128, 0.3); }
+    100% { opacity: 0.25; text-shadow: 0 0 10px rgba(243, 227, 195, 0.1); }
+}
+.shining-text {
+    color: #f3e3c3;
+    animation: shineEffect 3s ease-in-out infinite;
+}
+
+.signature-text {
+    font-family: 'Reenie Beanie', cursive;
+}
+
+@keyframes rotateBorder {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.animate-rotate-shine {
+    animation: rotateBorder 6s linear infinite;
+}
+/* Swiper Pagination Theme Customization */
+.swiper-pagination-bullet {
+    background: #89715b !important;
+    opacity: 0.4;
+    width: 9px;
+    height: 9px;
+    transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background: #c5a880 !important;
+    opacity: 1;
+    width: 24px; /* Active bullet thoda wide/capsule shape lagega */
+    border-radius: 5px;
+}
+
+/* Pagination position ko card se neeche set karne ke liye */
+.swiper-pagination {
+    bottom: 0px !important;
+}
