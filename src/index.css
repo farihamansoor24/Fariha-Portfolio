@@ -1,71 +1,89 @@
 @import "tailwindcss";
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Reenie+Beanie&display=swap');
+   body {
+            background-color: #050505;
+            color: #f5f5f5;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        /* Metallic Shining Gold Colors & Utilities */
+        .text-custom-bronze { color: #d4af37; }
+        .bg-custom-bronze { background-color: #d4af37; }
+        .border-custom-bronze { border-color: #d4af37; }
+        .border-bronze-subtle { border-color: rgba(212, 175, 55, 0.25); }
 
-body {
-    background-color: #0b0b0b;
-    color: #e5e5e5;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    overflow-x: hidden;
-}
+        .text-gold-shine {
+            background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 30%, #b38728 60%, #fbf5b7 80%, #aa771c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
+        }
 
-.text-custom-bronze { color: #89715b; }
-.bg-custom-bronze { background-color: #89715b; }
-.border-custom-bronze { border-color: #89715b; }
-.border-bronze-subtle { border-color: rgba(137, 113, 91, 0.3); }
+        .bg-gold-metallic {
+            background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
+        }
 
-/* Initial hidden state */
-.stagger-card, .scroll-anim {
-    opacity: 0;
-    transform: translateY(30px);
-}
+        /* Initial hidden state so sections never stay blank */
+        .stagger-card, .scroll-anim {
+            opacity: 0;
+            transform: translateY(30px);
+        }
 
-/* Typing cursor blink effect */
-.typing-cursor {
-    display: inline-block;
-    background-color: #89715b;
-    width: 3px;
-    animation: blink 1s infinite;
-}
-.skill-bar {
-    transition: width 1.5s cubic-bezier(0.1, 0.42, 0.65, 1);
-}
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-}
+        /* Typing cursor blink effect */
+        .typing-cursor {
+            display: inline-block;
+            background-color: #ffd700;
+            width: 3px;
+            animation: blink 1s infinite;
+        }
+        .skill-bar {
+            transition: width 1.5s cubic-bezier(0.1, 0.42, 0.65, 1);
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
 
-@keyframes scrollText {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-50%); }
-}
-.animate-scroll {
-    display: flex;
-    width: 200%;
-    animation: scrollText 18s linear infinite;
-}
-
-@keyframes shineEffect {
-    0% { opacity: 0.25; text-shadow: 0 0 10px rgba(243, 227, 195, 0.1); }
-    50% { opacity: 0.6; text-shadow: 0 0 20px rgba(243, 227, 195, 0.4), 0 0 30px rgba(197, 168, 128, 0.3); }
-    100% { opacity: 0.25; text-shadow: 0 0 10px rgba(243, 227, 195, 0.1); }
-}
-.shining-text {
-    color: #f3e3c3;
-    animation: shineEffect 3s ease-in-out infinite;
-}
-
-.signature-text {
-    font-family: 'Reenie Beanie', cursive;
-}
-
-@keyframes rotateBorder {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-.animate-rotate-shine {
-    animation: rotateBorder 6s linear infinite;
-}
+      /* Animated Infinite Scrolling Text Effect Behind Profile Pic */
+      @keyframes scrollText {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-scroll {
+        display: flex;
+        width: 200%;
+        animation: scrollText 18s linear infinite;
+      }
+      
+      /* Shining Text Glow & Shimmer Effect (WhatsApp Image Vibe) */
+      @keyframes goldGlow {
+          0%, 100% {
+              filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.4)) drop-shadow(0 0 20px rgba(184, 134, 11, 0.3));
+          }
+          50% {
+              filter: drop-shadow(0 0 18px rgba(255, 243, 167, 0.8)) drop-shadow(0 0 35px rgba(212, 175, 55, 0.6));
+          }
+      }
+      .shining-text {
+          background: linear-gradient(135deg, #ffe066 0%, #ffffff 40%, #d4af37 70%, #996515 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: goldGlow 3s ease-in-out infinite;
+      }
+      .signature-text {
+          font-family: 'Reenie Beanie', cursive;
+      }
+  
+      /* Rotating Shining Border Animation */
+      @keyframes rotateBorder {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+      }
+      .animate-rotate-shine {
+          animation: rotateBorder 6s linear infinite;
+      }
 /* Swiper Pagination Theme Customization */
 .swiper-pagination-bullet {
     background: #89715b !important;

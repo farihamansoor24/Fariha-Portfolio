@@ -16,19 +16,18 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="px-8 py-20 bg-[#111111]/60 border-t border-b border-bronze-subtle scroll-section">
+    <section id="projects" className="px-8 py-20 bg-[#0c0c0c] border-t border-b border-bronze-subtle scroll-section">
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-center mb-12 scroll-anim">
           <div>
-            <span className="text-custom-bronze text-xs tracking-widest uppercase font-semibold">— FEATURED PROJECTS</span>
-            <h2 className="text-3xl font-bold mt-1 text-[#f3e3c3] tracking-wide">SELECTED WORK</h2>
+            <span className="text-[#fcf6ba] text-xs tracking-widest uppercase font-bold">— FEATURED PROJECTS</span>
+            <h2 className="text-3xl font-extrabold mt-1 text-transparent bg-clip-text tracking-wide" style={{ backgroundImage: 'linear-gradient(135deg, #ffe066 0%, #ffffff 40%, #d4af37 70%, #996515 100%)' }}>SELECTED WORK</h2>
           </div>
-          <a href="#projects" className="border border-bronze-subtle px-5 py-2 rounded-full text-xs text-custom-bronze hover:border-custom-bronze transition hidden md:inline-block uppercase tracking-wider">
+          <a href="#projects" className="border border-bronze-subtle px-5 py-2 rounded-full text-xs text-[#fcf6ba] hover:border-[#ffd700] transition hidden md:inline-block uppercase tracking-wider font-semibold">
             VIEW ALL PROJECTS <i className="fa-solid fa-arrow-right text-[10px] ml-1"></i>
           </a>
         </div>
 
-        {/* Swiper Slider Wrapper */}
         <div className="relative">
           <Swiper
             modules={[Autoplay, Pagination]}
@@ -49,13 +48,13 @@ const Projects = () => {
           >
             {projectsData.map((project) => (
               <SwiperSlide key={project.id} className="h-auto">
-                <div className="bg-[#141414] rounded-2xl border border-bronze-subtle overflow-hidden hover:border-custom-bronze transition group stagger-card h-full flex flex-col">
-                  <div className="h-48 bg-[#1f1f1f] flex items-center justify-center text-custom-bronze/40 group-hover:text-custom-bronze transition overflow-hidden">
+                <div className="bg-[#0a0a0a] rounded-2xl border border-bronze-subtle overflow-hidden hover:border-[#ffd700] transition group stagger-card h-full flex flex-col shadow-lg">
+                  <div className="h-48 bg-[#121212] flex items-center justify-center text-[#d4af37]/50 group-hover:text-[#ffd700] transition overflow-hidden">
                     <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
                   </div>
                   <div className="p-6 flex-grow">
-                    <span className="text-custom-bronze font-bold text-xs">{project.id}</span>
-                    <h3 className="text-lg font-bold text-[#f3e3c3] mt-1">{project.title}</h3>
+                    <span className="text-transparent bg-clip-text font-bold text-xs" style={{ backgroundImage: 'linear-gradient(135deg, #ffe066 0%, #ffffff 40%, #d4af37 70%, #996515 100%)' }}>{project.id}</span>
+                    <h3 className="text-lg font-bold text-[#fcf6ba] mt-1">{project.title}</h3>
                     <p className="text-xs text-gray-400 mt-1">{project.category}</p>
                   </div>
                 </div>
@@ -63,7 +62,6 @@ const Projects = () => {
             ))}
           </Swiper>
 
-          {/* Custom Pagination Container - Cards ke bilkul neeche */}
           <div className="custom-swiper-pagination !relative !mt-8 flex justify-center items-center"></div>
         </div>
       </div>
