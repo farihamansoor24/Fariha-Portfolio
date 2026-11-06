@@ -56,7 +56,14 @@
         width: 200%;
         animation: scrollText 18s linear infinite;
       }
-      
+  
+      .shining-text {
+          background: linear-gradient(135deg, #ffe066 0%, #ffffff 40%, #d4af37 70%, #996515 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: goldGlow 3s ease-in-out infinite;
+      }
+          
       /* Shining Text Glow & Shimmer Effect (WhatsApp Image Vibe) */
       @keyframes goldGlow {
           0%, 100% {
@@ -65,12 +72,6 @@
           50% {
               filter: drop-shadow(0 0 18px rgba(255, 243, 167, 0.8)) drop-shadow(0 0 35px rgba(212, 175, 55, 0.6));
           }
-      }
-      .shining-text {
-          background: linear-gradient(135deg, #ffe066 0%, #ffffff 40%, #d4af37 70%, #996515 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          animation: goldGlow 3s ease-in-out infinite;
       }
       .signature-text {
           font-family: 'Reenie Beanie', cursive;

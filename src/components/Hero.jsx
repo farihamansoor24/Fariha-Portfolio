@@ -38,8 +38,8 @@ const Hero = () => {
 
         <div className="hero-visual relative flex items-center justify-center w-full lg:w-auto py-12 opacity-0 scale-95">
           <div className="absolute -top-5 sm:-top-2 inset-x-0 flex justify-center pointer-events-none select-none z-30">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-wider text-white drop-shadow-[0_5px_15px_rgba(0,0,0,0.9)] whitespace-nowrap" style={{ background: 'linear-gradient(135deg, #ffe066 0%, #ffffff 40%, #d4af37 70%, #996515 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-              WEB DESIGNER
+            <h2 className="shining-text text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-wider text-white drop-shadow-[0_5px_15px_rgba(0,0,0,0.9)] whitespace-nowrap" style={{ background: 'linear-gradient(135deg, #ffe066 0%, #ffffff 40%, #d4af37 70%, #996515 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+              WEB DEVELOPER
             </h2>
           </div>
 
@@ -58,8 +58,8 @@ const Hero = () => {
           </div>
 
           <div className="absolute -bottom-1 sm:-bottom-2 inset-x-0 flex justify-center pointer-events-none select-none z-30">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-wider text-white drop-shadow-[0_5px_15px_rgba(0,0,0,0.9)] whitespace-nowrap" style={{ background: 'linear-gradient(135deg, #ffe066 0%, #ffffff 40%, #d4af37 70%, #996515 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-              WEB DEVELOPER
+            <h2 className="shining-text text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-wider text-white drop-shadow-[0_5px_15px_rgba(0,0,0,0.9)] whitespace-nowrap" style={{ background: 'linear-gradient(135deg, #ffe066 0%, #ffffff 40%, #d4af37 70%, #996515 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+              UI/UX DESIGNER
             </h2>
           </div>
         </div>

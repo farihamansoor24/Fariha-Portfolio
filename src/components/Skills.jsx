@@ -13,9 +13,9 @@ const Skills = () => {
               { name: "JavaScript / TypeScript", width: "95%" },
               { name: "React / Next.js", width: "92%" },
               { name: "Node.js / Express", width: "90%" },
-              { name: "MongoDB / SQL", width: "85%" },
+              { name: "MongoDB / MySql", width: "85%" },
               { name: "HTML / CSS / Tailwind", width: "95%" },
-              { name: "AWS / Cloud Services", width: "80%" }
+              { name: "Laravel / CakePHP", width: "90%" }
             ].map((skill, idx) => (
               <div key={idx}>
                 <div className="flex justify-between text-xs font-semibold mb-1">
@@ -37,15 +37,15 @@ const Skills = () => {
               { icon: 'devicon-typescript-plain text-blue-500', name: 'TypeScript' },
               { icon: 'devicon-javascript-plain text-yellow-400', name: 'JavaScript' },
               { icon: 'devicon-tailwindcss-original text-teal-400', name: 'Tailwind' },
+              { icon: 'devicon-bootstrap-plain text-purple-500', name: 'Bootstrap' },
               { icon: 'devicon-mongodb-plain text-emerald-500', name: 'MongoDB' },
-              { icon: 'devicon-postgresql-plain text-blue-400', name: 'PostgreSQL' },
+              { icon: 'devicon-mysql-plain text-blue-400', name: 'MySQL' },
               { icon: 'devicon-git-plain text-orange-500', name: 'Git' },
-              { icon: 'devicon-docker-plain text-blue-500', name: 'Docker' },
-              { icon: 'devicon-amazonwebservices-plain-wordmark text-amber-500', name: 'AWS' },
+              { icon: 'devicon-redux-original text-blue-500', name: 'Redux' },
               { icon: 'devicon-firebase-plain text-yellow-500', name: 'Firebase' },
-              { icon: 'devicon-graphql-plain text-pink-500', name: 'GraphQL' },
-              { icon: 'devicon-redux-original text-purple-400', name: 'Redux' },
-              { icon: 'devicon-jest-plain text-rose-500', name: 'Jest' }
+              { icon: 'devicon-php-plain text-blue-500', name: 'PHP' },
+              { icon: 'devicon-cakephp-plain text-purple-400', name: 'CakePHP' },
+              { icon: 'devicon-laravel-plain text-red-500', name: 'Laravel' }
             ].map((skill, index) => (
               <div key={index} className="bg-[#0a0a0a] p-4 rounded-xl border border-bronze-subtle flex flex-col items-center justify-center space-y-2 hover:border-[#ffd700] transition stagger-card shadow">
                 <i className={`${skill.icon} text-2xl`}></i>
