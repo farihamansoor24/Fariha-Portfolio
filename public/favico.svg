@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a" />
+      <stop offset="100%" stop-color="#171410" />
+    </linearGradient>
+
+    <!-- Metallic Gold Gradient for Gem -->
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe066" />
+      <stop offset="35%" stop-color="#ffffff" />
+      <stop offset="70%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#996515" />
+    </linearGradient>
+
+    <!-- Subtle Outer Border Gradient -->
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bf953f" />
+      <stop offset="50%" stop-color="#fcf6ba" />
+      <stop offset="100%" stop-color="#b38728" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="gold-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#ffd700" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Dark Container -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bg-grad)" stroke="url(#border-grad)" stroke-width="2" />
+
+  <!-- Styled Gem / Diamond Icon (Matching Portfolio Theme) -->
+  <g filter="url(#gold-glow)" transform="translate(14, 14)">
+    <!-- Gem Top Crown -->
+    <polygon points="6,4 30,4 36,14 0,14" fill="url(#gold-grad)" />
+    <!-- Gem Lower Pavilion -->
+    <polygon points="0,14 36,14 18,32" fill="url(#gold-grad)" opacity="0.9" />
+    <!-- Inner Facet Highlights -->
+    <polygon points="12,4 24,4 30,14 6,14" fill="#ffffff" opacity="0.35" />
+    <polygon points="18,32 12,14 24,14" fill="#ffffff" opacity="0.25" />
+  </g>
+</svg>
