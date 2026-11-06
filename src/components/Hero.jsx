@@ -11,17 +11,30 @@ const Hero = () => {
             I craft end-to-end web solutions, combining engaging frontend interfaces with powerful backend systems to build high-performance applications that elevate your brand.
           </p>
           
+          {/* Action Buttons with Smooth Hover Effects */}
           <div className="hero-btns flex flex-wrap items-center gap-4 mt-8 opacity-0 translate-y-6">
-            <a href="#contact" className="relative group p-[1.5px] rounded-full overflow-hidden inline-block transition-all duration-300 hover:scale-105 shadow-[0_0_25px_rgba(212,175,55,0.4)]">
-              <span className="absolute inset-0 animate-rotate-shine opacity-90" style={{ background: 'conic-gradient(from 0deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #bf953f)' }}></span>
-              <span className="relative flex items-center justify-center px-7 py-3 rounded-full bg-[#0a0a0a] text-[#fcf6ba] font-bold group-hover:bg-gold-metallic group-hover:text-black transition-all duration-300 text-xs tracking-wider uppercase">
-                HIRE ME <i className="fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1.5 text-[#ffd700] group-hover:text-black"></i>
+            
+            {/* HIRE ME Button */}
+            <a 
+              href="#contact" 
+              className="relative group p-[1.5px] rounded-full overflow-hidden inline-block transition-all duration-500 hover:scale-105 hover:shadow-[0_0_35px_rgba(252,246,186,0.6)] shadow-[0_0_25px_rgba(212,175,55,0.4)]"
+            >
+              <span className="absolute inset-0 animate-rotate-shine opacity-90 transition-opacity duration-500 group-hover:opacity-100" style={{ background: 'conic-gradient(from 0deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #bf953f)' }}></span>
+              <span className="relative flex items-center justify-center px-7 py-3 rounded-full bg-[#0a0a0a] text-[#fcf6ba] font-bold group-hover:bg-gradient-to-r group-hover:from-[#fcf6ba] group-hover:via-[#d4af37] group-hover:to-[#bf953f] group-hover:text-black transition-all duration-500 text-xs tracking-wider uppercase">
+                HIRE ME 
+                <i className="fa-solid fa-arrow-right ml-2 transition-transform duration-300 group-hover:translate-x-2 text-[#ffd700] group-hover:text-black"></i>
               </span>
             </a>
 
-            <a href="#projects" className="relative px-7 py-3 rounded-full border border-[#d4af37]/50 text-gray-200 bg-[#0a0a0a]/50 backdrop-blur-sm hover:text-black hover:bg-gold-metallic hover:border-[#ffd700] transition-all duration-300 text-xs tracking-wider uppercase shadow-lg hover:scale-105 flex items-center font-bold">
-              VIEW WORK <i className="fa-regular fa-folder-open ml-2"></i>
+            {/* VIEW WORK Button */}
+            <a 
+              href="#projects" 
+              className="relative px-7 py-3 rounded-full border border-[#d4af37]/50 text-gray-200 bg-[#0a0a0a]/50 backdrop-blur-sm hover:text-black hover:bg-gradient-to-r hover:from-[#fcf6ba] hover:via-[#d4af37] hover:to-[#bf953f] hover:border-[#ffd700] transition-all duration-500 text-xs tracking-wider uppercase shadow-lg hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] hover:scale-105 flex items-center font-bold group"
+            >
+              VIEW WORK 
+              <i className="fa-regular fa-folder-open ml-2 transition-transform duration-300 group-hover:scale-110 text-[#ffd700] group-hover:text-black"></i>
             </a>
+
           </div>
 
           <div className="hero-meta mt-6 text-xs tracking-wider text-green-400 flex items-center opacity-0">
