@@ -11,6 +11,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Experience from './components/Experience';
 import CustomCursor from './components/CustomCursor';
+import Education from './components/Education';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function App() {
@@ -169,15 +170,17 @@ export default function App() {
 
       {/* About Section */}
      <About />
-
+      {/* Education Section */}
+      <Education />
+      
+      {/* Skills Section */}
+     <Skills />
       {/* Services Section */}
      <Services />
 
       {/* Experience Section */}
       <Experience />
 
-      {/* Skills Section */}
-     <Skills />
 
       {/* Projects Section */}
      <Projects />
