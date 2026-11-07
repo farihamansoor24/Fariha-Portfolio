@@ -17,7 +17,7 @@ const Projects = () => {
     },
     { 
       id: "02", 
-      title: "INTERIOR ELEGANCE", 
+      title: "SOFTLAND", 
       category: "SOFTLAND Landing Page | React", 
       img: "./project-2.PNG",
       liveLink: "https://softland-landing-page-murex.vercel.app/",
